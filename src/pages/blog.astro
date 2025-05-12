@@ -1,5 +1,5 @@
 ---
-
+import {site_title} from "../utils"
 ---
 
 <html lang="en">
@@ -8,13 +8,17 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>{site_title}</title>
 	</head>
 	<body>
         <a href="/">Home</a>
         <a href="/about/">About</a>
         <a href="/blog/">Blog</a>
-  		<h1>Travel Stories</h1>
+  		<h1>Blog</h1>
         <p>This is where I share stories from my travels and showcase some of my favorite photos. Each post highlights a different trip, with images captured on film along the way.</p>
+		<ul>
+      	<li><a href="/posts/post-1/">Italy</a></li>
+      	<li><a href="/posts/post-2/">Paris</a></li>
+    	</ul>
 	</body>
 </html>
